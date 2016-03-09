@@ -1,0 +1,24 @@
+//********************************************************************************************************
+// Java RegEx to allow ApaphaNumeric and Special Chars as follows    \ | / “” ‘ - _ , . ; & =
+//********************************************************************************************************
+
+import java.lang.Math; 
+
+
+public class RegExMatch
+{
+  public static void main(String[] args)
+  {
+
+		String pattern = "^([a-zA-Z0-9|/'-_,.;\"&=\\\\]*)$";
+    
+		String line = "asdhsjkf2-3_9,4\7234JHJJHH-.,=-_,_-'";
+		
+		Boolean match = line.matches(pattern); 
+		
+		System.out.println("match: "+match);
+    
+
+  }
+
+}
